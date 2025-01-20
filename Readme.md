@@ -22,8 +22,12 @@ python manage.py startapp <app name>
 ```
 
 
-
 ### Models:
 - Models are used in Django to describe the data we need for our application.
 - Django uses these models to set up and configure our database to store our data effectively.
-- Django handles the relationship between our models and the database for us so we never need to write any SQL statements or interact with the database directly.
+- Django handles the relationship between our models and the database for us, so we never need to write any SQL statements or interact with the database directly.
+- Run command to migrate any databases, we need to migrate our DBs after any change
+```commandline
+python manage.py makemigrations
+python manage.py migrate
+```
